@@ -1,0 +1,180 @@
+body{
+    background-color:#eeeeee;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-shrink: 0;
+    gap:16px;
+}
+
+.logo,h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.logo{
+    font-size:24px;
+    font-weight: bold;
+    color: #F9FAF8;
+}
+
+p,a{
+    font-family: 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+}
+
+.dark p, .dark a{
+    color: #E5E7EB;
+}
+
+a{
+    text-decoration:none;
+    font-size: 18px;
+}
+
+.dark{
+    background-color: #1F2937;
+}
+
+.image.large{
+    /*padding cos placeholder image is too small to make the box have proper size would not be there were this a real thing*/
+    background-color: #c3c3c3;
+    padding: 50px;
+}
+
+.content:nth-of-type(2){
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+}
+
+.block.first{
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+}
+
+.block.first p{
+    color: #E5E7EB;
+    font-size: 16px;
+}
+
+.block.first h2{
+    color: #F9FAF8;
+    margin-bottom: -10px;
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.signup{
+    width: 100px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background-color: #3882f6;
+    color: #F9FAF8;
+    border: none;
+    border-radius: 5px;
+}
+
+.block.second{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-grow: 1;
+    gap: 20px;
+}
+
+.box-holder{
+    display: flex;
+    gap: 50px;
+}
+
+.img-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-box img{
+    border:#3882f6 5px solid;
+    border-radius: 30px;
+    /*padding cos placeholder image is too small to make the box have proper size would not be there were this a real thing*/
+    padding: 50px;
+    background-color: white;
+}
+
+.img-box p{
+    text-align: center;
+    max-width: 200px;
+}
+
+.content:nth-of-type(3){
+    background-color: #E5E7EB;
+    padding: 100px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.quote{
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #1F2937;
+    /*text-align: center;*/
+    max-width: 1000px;
+}
+
+.attribution{
+    font-size: 18px;
+    font-weight: bold;
+    align-self: center;
+    margin-left: 800px;
+}
+
+.popup{
+    display: flex;
+    background-color: #3882f6;
+    padding: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 100px;
+    border-radius: 10px;
+    gap: 150px;
+    align-items: center;
+}
+
+.popup p, .popup h2{
+    color: #E5E7EB;
+    width: max-content;
+}
+
+.popup .signup{
+    border: 3px solid #E5E7EB;
+    max-height: 50px;
+    font-weight: bold;
+    font-size: 18px;
+    width: 150px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
